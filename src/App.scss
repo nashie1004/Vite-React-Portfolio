@@ -2,8 +2,8 @@
 $black: black;
 $violet-black: rgb(9, 22, 59);
 $white: white;
-$dodger: dodgerblue;
 $coral: lightcoral;
+$dodger: dodgerblue;
 $cyan-light: #477397;
 $yellow: yellow;
 
@@ -52,10 +52,10 @@ $yellow: yellow;
             border-bottom: 1px solid $violet-black;
             width: 100%;
             min-height: calc(100vh - 80px);
-            padding: 3rem;
+            padding: 2rem 3rem;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             gap: 1rem;
 
@@ -64,13 +64,25 @@ $yellow: yellow;
                 height: 100%;
             }
         }
+
+        .low-padding{
+            min-height: 300px;
+        }
     }
 }
 @media only screen and (max-width: 750px) {
     .App{
+        .Nav{
+            padding-inline: 1rem;
+        }
         .Home{
             .section{
                 padding: 1rem;
+            }
+            .present{
+                h1{
+                    font-size: 3.5rem;
+                }
             }
         }
     }
