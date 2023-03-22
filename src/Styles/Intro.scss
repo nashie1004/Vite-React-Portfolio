@@ -2,43 +2,49 @@ $cyan-light: #477397;
 $dodger: dodgerblue;
 $coral: lightcoral;
 
-.intro{
-    .present{
-        max-width: 700px;
+.present{
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    h1{
+        font-size: 4rem;
+        span{
+            color: $dodger;
+        }
+    }
+    .p-container{
+        max-width: 100%;
+
+        p{
+            line-height: 1.75rem;
+            text-align: center;
+        }
+    }
+    .logos{
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+        gap: .5rem;
+    }
+    .btn-container{
+        display: flex;
+        gap: 1.1rem;
 
-        h1{
-            font-size: 4rem;
-            span{
-                color: $dodger;
-            }
+        @mixin btn{
+            background: none;
+            font-size: 1rem;
+            padding: 1rem 1.5rem;
+            border: 2px solid $dodger;
+            max-width: 200px;
         }
-        .p-container{
-            max-width: 100%;
-            p{text-align: center;}
+        .outline-only{
+            @include btn();
         }
-        .btn-container{
-            display: flex;
-            gap: 1.1rem;
-
-            @mixin btn{
-                background: none;
-                font-size: 1rem;
-                padding: 1rem 1.5rem;
-                border: 2px solid $dodger;
-                max-width: 200px;
-            }
-            .outline-only{
-                @include btn();
-            }
-            .solid{
-                @include btn();
-                border: 2px solid $cyan-light;
-                background: $cyan-light;
-            }
+        .solid{
+            @include btn();
+            border: 2px solid $cyan-light;
+            background: $cyan-light;
         }
     }
 }

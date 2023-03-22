@@ -1,18 +1,40 @@
 $cyan-light: #477397;
+$coral: lightcoral;
+$card-bg: rgb(9, 22, 59);
+$white: white;
 
-.projects{
-                
-    .card-container{
-        // outline: 1px dashed limegreen;
+.card-container{
+    // outline: 1px dashed limegreen;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+
+    .project-card{
+        min-height: 400px;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
+        gap: 1rem;
 
-        .card{
-            min-width: 400px;
-            min-height: 400px;
+        @mixin flexOne{
+            flex: 1;
+            min-width: 300px;
+            height: 400px;
             border: 1px solid $cyan-light;
+            display: grid;
+            place-items: center;
+        }        
+
+        .img{
+            @include flexOne();
+        }
+
+        .info{
+            @include flexOne();
+            outline: 1px solid $coral;
         }
     }
-}    
+}
