@@ -1,0 +1,18 @@
+$cyan-light: #477397;
+
+.projects{
+                
+    .card-container{
+        // outline: 1px dashed limegreen;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .card{
+            min-width: 400px;
+            min-height: 400px;
+            border: 1px solid $cyan-light;
+        }
+    }
+}    
