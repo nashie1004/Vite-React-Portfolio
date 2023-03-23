@@ -8,6 +8,7 @@ $cyan-light: #477397;
     border: 1px solid $cyan-light;
     display: grid;
     place-items: center;
+    flex: 70%;
 
     input, textarea, button{
         border: none;

@@ -7,7 +7,9 @@ $light-grey: lightgrey;
 
 .about-info{
     width: 100%;
-    min-height: 60%; //NOT WORKING
+    flex: 70%;
+    outline: 1px solid $cyan-light;
+    // min-height: 60%; //NOT WORKING
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;

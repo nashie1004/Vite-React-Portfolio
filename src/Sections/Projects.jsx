@@ -11,9 +11,7 @@ const imageURL = [
 export default function Projects() {
   return (
     <>
-      <p className='heading-p'>
-        Projects
-      </p>
+      <p className='heading-p'>Projects</p>
       <div className="card-container">
         <ProjectCard image={imageURL[0]} />
         <ProjectCard image={imageURL[1]} />

@@ -10,14 +10,14 @@ export default function Intro() {
         <div className="p-container">
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, nihil.</p>
         </div>
-        <div className="logos">
+        {/* <div className="logos">
           <span className="logo">
             <FaGithub size='1.5rem' fontcolor='#477397' />
           </span>
           <span className="logo">
             <FaLinkedin size='1.5rem' fontcolor='#477397' />
           </span>
-        </div>
+        </div> */}
         <div className='btn-container'>
           <button className='outline-only'>Lorem, ipsum.</button>
           <button className='solid'>Lorem, ipsum.</button>

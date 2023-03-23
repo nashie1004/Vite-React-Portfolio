@@ -1,0 +1,12 @@
+import React from 'react'
+
+export default function LanguangeCard({image, name}) {
+  return (
+    <div className="languange">
+        <div className="img">
+            <img src={image} alt="" className='img-pic' />
+        </div>
+        <p>{name}</p>
+    </div>
+  )
+}
