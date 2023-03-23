@@ -8,7 +8,7 @@ export default function Intro() {
       <div className="present">
         <h1>Lorem ipsum <span>dolor sit.</span></h1>
         <div className="p-container">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam quasi quod quibusdam. Enim dignissimos laboriosam repudiandae velit consequatur deleniti dicta aperiam sapiente repellat quibusdam nesciunt, debitis consequuntur tempore voluptatibus in. Quia accusamus enim ducimus tenetur.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, nihil.</p>
         </div>
         <div className="logos">
           <span className="logo">

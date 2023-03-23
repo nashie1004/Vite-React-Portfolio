@@ -1,6 +1,7 @@
 $cyan-light: #477397;
 $dodger: dodgerblue;
 $coral: lightcoral;
+$yellow: yellow;
 
 .present{
     max-width: 800px;
@@ -19,8 +20,11 @@ $coral: lightcoral;
     }
     .p-container{
         max-width: 100%;
-
+        h2{
+            // color: $yellow;
+        }
         p{
+            font-size: 1.2rem;
             line-height: 1.75rem;
             text-align: center;
         }

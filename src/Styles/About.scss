@@ -3,10 +3,11 @@ $white: white;
 $dark: rgb(5, 15, 44);
 $yellow: yellow;
 $cyan-light: #477397;
+$light-grey: lightgrey;
 
 .about-info{
     width: 100%;
-    min-height: 500px;
+    min-height: 60%; //NOT WORKING
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
@@ -22,9 +23,44 @@ $cyan-light: #477397;
 
     .about-img{
         @include flexOne();
+        position: relative;
+
+        .bg-color{
+            position: absolute;
+            background: $dodger;
+            width: 300px;
+            height: 300px;
+            border-radius: 2rem;
+            transform: rotate(15deg);
+        }
+        img{
+            position: absolute;
+            z-index: 2;
+            width: 300px;
+            height: 300px;
+            border-radius: 2rem;
+            background: $light-grey;
+        }
     }
     .about-info{
         @include flexOne();
         border: 1px solid $yellow;
+
+        .p-about{
+            width: 100%;
+
+            p{
+                font-size: 1.2rem;
+                line-height: 2rem;
+            }
+
+            .heading{
+                text-align: center;
+                margin-bottom: 1rem;
+                color: $yellow;
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+        }
     }
 }

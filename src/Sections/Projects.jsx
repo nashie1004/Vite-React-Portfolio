@@ -1,5 +1,12 @@
 import React from 'react'
 import '../Styles/Projects.scss'
+import ProjectCard from '../Components/ProjectCard';
+
+const imageURL = [
+  'https://picsum.photos/id/110/400/500',
+  'https://picsum.photos/id/145/400/500', 
+  'https://picsum.photos/id/170/400/500',
+]
 
 export default function Projects() {
   return (
@@ -8,34 +15,9 @@ export default function Projects() {
         Projects
       </p>
       <div className="card-container">
-
-        <div className='project-card'>
-          <div className="img">
-            img
-          </div>
-          <div className="info">
-            Lorem, ipsum.
-          </div>
-        </div>
-
-        <div className='project-card'>
-          <div className="img">
-            img
-          </div>
-          <div className="info">
-            Lorem, ipsum.
-          </div>
-        </div>
-        
-        <div className='project-card'>
-          <div className="img">
-            img
-          </div>
-          <div className="info">
-            Lorem, ipsum.
-          </div>
-        </div>
-
+        <ProjectCard image={imageURL[0]} />
+        <ProjectCard image={imageURL[1]} />
+        <ProjectCard image={imageURL[2]} />
       </div>
     </>
   )

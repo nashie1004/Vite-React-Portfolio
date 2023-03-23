@@ -2,6 +2,9 @@ $cyan-light: #477397;
 $coral: lightcoral;
 $card-bg: rgb(9, 22, 59);
 $white: white;
+$yellow: yellow;
+$black: black;
+$light-grey: lightgrey;
 
 .card-container{
     // outline: 1px dashed limegreen;
@@ -13,6 +16,7 @@ $white: white;
 
     .project-card{
         min-height: 400px;
+        // border: 1px solid $cyan-light;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -22,7 +26,7 @@ $white: white;
         @mixin flexOne{
             flex: 1;
             min-width: 300px;
-            height: 400px;
+            min-height: 400px;
             border: 1px solid $cyan-light;
             display: grid;
             place-items: center;
@@ -30,11 +34,87 @@ $white: white;
 
         .img{
             @include flexOne();
+            display: grid;
+            place-items: center;
+            border: 1px solid $cyan-light;
+            border: none;
+
+            img{
+                background: $light-grey;
+                background-size: cover;
+                object-fit: cover;
+                border-radius: 1rem;
+                height: 350px;
+                min-width: 85%;
+                opacity: 0.5;  
+            }
         }
 
         .info{
             @include flexOne();
-            outline: 1px solid $coral;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            border: 1px solid $coral;
+            border: none;
+
+            .header{
+                font-weight: bold;
+                font-size: 3.5rem;
+                text-align: center;
+            }
+
+            .languanges-used{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+                width: 100%;
+
+                .inline{
+                    color: $yellow;
+                    display: flex;
+                    align-items: center;
+                    gap: .35rem;
+
+                    .circle{
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        background: $yellow;
+                    }
+                }
+            }
+
+            p:not(.header){line-height: 2rem;}
+
+            .links{
+                display: flex;
+                gap: 1rem;
+
+                a{
+                    width: 45px;
+                    height: 45px;
+                    display: grid;
+                    place-items: center;
+                    border-radius: 50%;
+                    border: 1px solid $white;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 800px){
+    .card-container{
+        .project-card{
+            .info{
+                .header{
+                    font-size: 2.5rem;
+                }
+            }
         }
     }
 }

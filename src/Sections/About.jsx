@@ -7,10 +7,14 @@ export default function About() {
       <p className='heading-p'>About</p>
       <div className="about-info">
         <div className="about-img">
-          img
+          <div className="bg-color"></div>
+          <img src="" alt="pic" />
         </div>
         <div className="about-info">
-          Lorem, ipsum.
+          <div className="p-about">
+            <p className='heading'>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur nobis, debitis mollitia odio doloremque nam numquam quasi magni facere?</p>
+          </div>
         </div>
       </div>
     </>

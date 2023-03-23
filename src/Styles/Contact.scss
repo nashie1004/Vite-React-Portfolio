@@ -4,7 +4,7 @@ $dodger: dodgerblue;
 $cyan-light: #477397;
 
 .contact-form{
-    min-height: 500px;
+    min-height: 500px; //NOT WORKING
     border: 1px solid $cyan-light;
     display: grid;
     place-items: center;
