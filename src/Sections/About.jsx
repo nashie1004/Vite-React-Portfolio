@@ -8,7 +8,7 @@ export default function About() {
       <div className="about-info">
         <div className="about-img">
           <div className="bg-color"></div>
-          <img src="" alt="pic" />
+          <img src="https://picsum.photos/id/234/300/300" alt="pic" />
         </div>
         <div className="about-info">
           <div className="p-about">
