@@ -12,6 +12,7 @@ $violet: #09163B;
     justify-content: space-around;
     align-items: center;
     padding: 0rem;
+    margin-top: 1rem;
     // border: 1px solid $cyan-light;
 
     // overflow-x: scroll;
@@ -37,6 +38,7 @@ $violet: #09163B;
         flex: 1;
         max-width: 350px;
         transition: transform .1s ease-in-out;
+        font-size: 1.25rem;
 
         .img-pic{
             width: 50px;

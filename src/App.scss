@@ -72,7 +72,9 @@ $yellow: yellow;
                 height: 100%;
             }
         }
-
+        .mid-padding{
+            min-height: 300px;
+        }
         .low-padding{
             min-height: 300px;
         }
@@ -88,8 +90,20 @@ $yellow: yellow;
                 padding: 1rem;
             }
             .present{
-                h1{
-                    font-size: 3.5rem;
+                .home-texts{
+                    h1{
+                        font-size: 3.5rem;
+                    }
+                }
+                .home-imgs{
+                    flex: 1;
+                }
+            }
+            .contact-form{
+                .form{
+                    // background: $coral;
+                    width: 100%;
+                    
                 }
             }
         }

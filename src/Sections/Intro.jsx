@@ -6,23 +6,38 @@ export default function Intro() {
   return (
     <>
       <div className="present">
-        <h1>Lorem ipsum <span>dolor sit.</span></h1>
-        <div className="p-container">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, nihil.</p>
+        <div className="home-texts">
+          <h1>Lorem ipsum dolor sit amet.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur nobis, debitis mollitia odio doloremque nam numquam quasi magni facere?</p>
+          <div className="btn">
+            <button>Lorem, ipsum.</button>
+          </div>
         </div>
-        {/* <div className="logos">
-          <span className="logo">
-            <FaGithub size='1.5rem' fontcolor='#477397' />
-          </span>
-          <span className="logo">
-            <FaLinkedin size='1.5rem' fontcolor='#477397' />
-          </span>
-        </div> */}
-        <div className='btn-container'>
-          <button className='outline-only'>Lorem, ipsum.</button>
-          <button className='solid'>Lorem, ipsum.</button>
+        <div className="home-imgs">
+          <div className="bg-color"></div>
+          <img src="https://picsum.photos/id/234/300/300" alt="pic" />
         </div>
       </div>
     </>
   )
 }
+
+// export default function Intro() {
+//   return (
+//     <>
+//       <div className="present">
+//         <div className="homepage-left">
+//           <div className="headers-h1">
+//             <h1>Lorem ipsum dolor sit amet.</h1>
+//             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur nobis, debitis mollitia odio doloremque nam numquam quasi magni facere?</p>
+//             <button>Lorem, ipsum.</button>
+//           </div>
+//         </div>
+//         <div className="homepage-right">
+//           <div className="bg-color"></div>
+//           <img src="https://picsum.photos/id/234/300/300" alt="pic" />
+//         </div>
+//       </div>
+//     </>
+//   )
+// }

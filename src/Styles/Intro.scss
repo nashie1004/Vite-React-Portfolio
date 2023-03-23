@@ -2,55 +2,201 @@ $cyan-light: #477397;
 $dodger: dodgerblue;
 $coral: lightcoral;
 $yellow: yellow;
+$light-grey: lightgrey;
+$white: white;
 
 .present{
-    max-width: 800px;
+    width: 100%;
+    flex: 100%;
+    min-height: 400px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 
-    h1{
-        text-align: center;
-        font-size: 5rem;
-        
-        span{
-            color: $dodger;
-        }
+    @mixin flex{
+        // border: 1px dashed $dodger;
+        flex: 1;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.6rem;
+        min-height: 400px;
+        padding: 1rem;
     }
-    .p-container{
-        max-width: 100%;
-        h2{
-            // color: $yellow;
+
+    .home-texts{
+        @include flex();
+        
+        h1{
+            width: 100%;
+            font-size: 3.6rem;
         }
         p{
             font-size: 1.2rem;
-            line-height: 1.75rem;
-            text-align: center;
+            line-height: 2rem;
         }
-    }
-    .logos{
-        display: flex;
-        gap: .5rem;
-    }
-    .btn-container{
-        display: flex;
-        gap: 1.1rem;
+        .btn{
+            width: 100%;
 
-        @mixin btn{
-            background: none;
-            font-size: 1rem;
-            padding: 1rem 1.5rem;
-            border: 2px solid $dodger;
-            max-width: 200px;
+            button{
+                background: none;
+                font-size: 1.2rem;
+                padding: 1rem 1.5rem;
+                border: 2px solid $dodger;
+                max-width: 230px;
+                // color: $dodger;
+            }
         }
-        .outline-only{
-            @include btn();
+    }
+    .home-imgs{
+        @include flex();
+        flex: .55;
+        position: relative;
+
+        .bg-color{
+            position: absolute;
+            background: $dodger;
+            width: 300px;
+            height: 300px;
+            border-radius: 2rem;
+            transform: rotate(15deg);
         }
-        .solid{
-            @include btn();
-            border: 2px solid $cyan-light;
-            background: $cyan-light;
+
+        img{
+            position: absolute;
+            z-index: 2;
+            width: 300px;
+            height: 300px;
+            border-radius: 2rem;
+            background: $light-grey;
+            box-shadow: 0 0 0 5px $white;
         }
     }
 }
+
+// .present{
+//     display: flex;
+//     flex: 100%;
+//     flex-wrap: wrap;
+//     gap: 1rem;
+
+//     @mixin flex{
+//         flex: 1;
+//         border: 1px solid $dodger;
+//         min-width: 300px;
+//         display: grid;
+//         place-items: center;
+//     }
+
+//     .homepage-left{
+//         @include flex();
+
+//         .headers-h1{
+//             // border: 1px solid $cyan-light;
+//             width: 100%;
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             gap: 1rem;
+
+//             h1{
+//                 text-align: center;
+//                 font-size: 4rem;
+//             }
+
+//             p{
+//                 font-size: 1.2rem;
+//                 line-height: 2rem;
+//                 text-align: center;
+//             }
+
+//             button{
+//                 background: none;
+//                 font-size: 1.2rem;
+//                 padding: 1rem 1.5rem;
+//                 border: 2px solid $dodger;
+//                 max-width: 230px;
+//             }
+//         }
+//     }
+//     .homepage-right{
+//         @include flex();
+//         flex: 1;
+//         // border: 1px solid $coral;
+//         position: relative;
+
+//         .bg-color{
+//             position: absolute;
+//             background: $dodger;
+//             width: 300px;
+//             height: 300px;
+//             border-radius: 2rem;
+//             transform: rotate(15deg);
+//         }
+
+//         img{
+//             position: absolute;
+//             z-index: 2;
+//             width: 300px;
+//             height: 300px;
+//             border-radius: 2rem;
+//             background: $light-grey;
+//             box-shadow: 0 0 0 5px $white;
+//         }
+//     }
+// }
+
+
+// .present{
+//     max-width: 800px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     gap: 2rem;
+
+//     h1{
+//         text-align: center;
+//         font-size: 5rem;
+        
+//         span{
+//             color: $dodger;
+//         }
+//     }
+//     .p-container{
+//         max-width: 100%;
+//         h2{
+//             // color: $yellow;
+//         }
+//         p{
+//             font-size: 1.2rem;
+//             line-height: 1.75rem;
+//             text-align: center;
+//         }
+//     }
+//     .logos{
+//         display: flex;
+//         gap: .5rem;
+//     }
+//     .btn-container{
+//         display: flex;
+//         gap: 1.1rem;
+
+//         @mixin btn{
+//             background: none;
+//             font-size: 1rem;
+//             padding: 1rem 1.5rem;
+//             border: 2px solid $dodger;
+//             max-width: 200px;
+//         }
+//         .outline-only{
+//             @include btn();
+//         }
+//         .solid{
+//             @include btn();
+//             border: 2px solid $cyan-light;
+//             background: $cyan-light;
+//         }
+//     }
+// }

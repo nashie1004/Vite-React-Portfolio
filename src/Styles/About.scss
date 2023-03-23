@@ -5,65 +5,94 @@ $yellow: yellow;
 $cyan-light: #477397;
 $light-grey: lightgrey;
 
-.about-info{
+.about-info-container{
+    // border: 1px solid $cyan-light;
     width: 100%;
     flex: 70%;
-    outline: 1px solid $cyan-light;
-    // min-height: 60%; //NOT WORKING
     display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    @mixin flexOne{
-        min-width: 300px;
-        flex: 1;
-        height: 500px;
-        border: 1px solid $cyan-light;
-        display: grid;
-        place-items: center;
+    p{
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 2.5rem;
+        width: 90%;
+        // border: 1px solid $yellow;
     }
 
-    .about-img{
-        @include flexOne();
-        position: relative;
-
-        .bg-color{
-            position: absolute;
-            background: $dodger;
-            width: 300px;
-            height: 300px;
-            border-radius: 2rem;
-            transform: rotate(15deg);
-        }
-        img{
-            position: absolute;
-            z-index: 2;
-            width: 300px;
-            height: 300px;
-            border-radius: 2rem;
-            background: $light-grey;
-            box-shadow: 0 0 0 5px $white;
-        }
-    }
-    .about-info{
-        @include flexOne();
-        border: 1px solid $yellow;
-
-        .p-about{
-            width: 100%;
-
-            p{
-                font-size: 1.2rem;
-                line-height: 2rem;
-            }
-
-            .heading{
-                text-align: center;
-                margin-bottom: 1rem;
-                color: $yellow;
-                font-size: 2.5rem;
-                font-weight: bold;
-            }
-        }
+    .yellow{
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        color: $yellow;
     }
 }
+
+// .about-info-container{
+//     width: 100%;
+//     flex: 70%;
+//     // outline: 1px solid $cyan-light;
+//     // min-height: 60%; //NOT WORKING
+//     display: flex;
+//     gap: 1rem;
+//     flex-wrap: wrap;
+
+//     @mixin flexOne{
+//         min-width: 300px;
+//         flex: 1;
+//         min-height: 450px;
+//         max-height: 100%;
+//         border: 1px solid $cyan-light;
+//         display: grid;
+//         place-items: center;
+//     }
+
+//     .about-img{
+//         @include flexOne();
+//         position: relative;
+
+//         .bg-color{
+//             position: absolute;
+//             background: $dodger;
+//             width: 300px;
+//             height: 300px;
+//             border-radius: 2rem;
+//             transform: rotate(15deg);
+//         }
+//         img{
+//             position: absolute;
+//             z-index: 2;
+//             width: 300px;
+//             height: 300px;
+//             border-radius: 2rem;
+//             background: $light-grey;
+//             box-shadow: 0 0 0 5px $white;
+//         }
+//     }
+//     .about-info{
+//         @include flexOne();
+//         border: 1px solid $yellow;
+
+//         .p-about{
+//             width: 100%;
+
+//             p{
+//                 font-size: 1.2rem;
+//                 line-height: 2rem;
+//             }
+
+//             .heading{
+//                 text-align: center;
+//                 margin-bottom: 1rem;
+//                 color: $yellow;
+//                 font-size: 2.5rem;
+//                 font-weight: bold;
+//             }
+
+//             p:nth-of-type(2){
+//                 text-align: center;
+//             }
+//         }
+//     }
+// }

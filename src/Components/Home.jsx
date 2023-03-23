@@ -11,7 +11,7 @@ export default function Home() {
       <div className="section">
         <Intro />
       </div>
-      <div className="section">
+      <div className="section mid-padding">
         <About />
       </div>
       <div className="section low-padding">
