@@ -57,17 +57,15 @@ $yellow: yellow;
 
     .Home{
         background: $black;
-        
-        .slide-animation{
-            background: $coral;
-        }
+
         .no-animate{
+            transition: opacity .2s ease-in-out, transform .2s ease-in-out;
             opacity: 0;
-            transform: translateX(50%);
+            transform: translateY(10%);
         }
         .animate{
             opacity: 1;
-            transform: translateX(0%);
+            transform: translateY(0%);
         }
     
         .section{
