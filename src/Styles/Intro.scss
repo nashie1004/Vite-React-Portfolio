@@ -11,7 +11,7 @@ $white: white;
     min-height: 400px;
     display: flex;
     flex-wrap: wrap;
-    // gap: 1rem;
+    gap: 1rem;
 
     @mixin flex{
         // border: 1px dashed $dodger;
@@ -36,6 +36,7 @@ $white: white;
         p{
             font-size: 1.2rem;
             line-height: 2rem;
+            color: $cyan-light;
         }
         .btn{
             width: 100%;
@@ -59,34 +60,41 @@ $white: white;
         @include flex();
         flex: .55;
         position: relative;
+        min-width: 300px;
+        min-height: 500px;
 
-        @keyframes move{
-            0%, 100%{
-                transform: translateY(-10%);
+        .skew{
+            animation: move 3s ease-in-out infinite;
+            
+            @keyframes move{
+                0%, 100%{
+                    transform: translateY(-10%);
+                }
+                50%{
+                    transform: translateY(10%);
+                }
             }
-            50%{
-                transform: translateY(10%);
+            
+            .bg-color{
+                transform: rotate(30deg);
+                background: $dodger;
+                width: 340px;
+                height: 340px;
+                border-radius: 2rem;
+                display: grid;
+                place-items: center;
+            } 
+    
+            img{
+                transform: rotate(-30deg);
+                z-index: 2;
+                width: 300px;
+                height: 300px;
+                border-radius: 2rem;
+                background: $light-grey;
+                box-shadow: 0 0 0 5px $white;
+                // object
             }
-        }
-
-        .bg-color, img{animation: move 3s ease-in-out infinite;}
-
-        .bg-color{
-            position: absolute;
-            background: $dodger;
-            width: 340px;
-            height: 340px;
-            border-radius: 2rem;
-        } //
-
-        img{
-            position: absolute;
-            z-index: 2;
-            width: 300px;
-            height: 300px;
-            border-radius: 2rem;
-            background: $light-grey;
-            box-shadow: 0 0 0 5px $white;
         }
     }
 }

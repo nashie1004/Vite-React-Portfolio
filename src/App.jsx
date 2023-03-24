@@ -1,4 +1,4 @@
-import {useEffect, useRef, useState} from 'react'
+import {useEffect, useRef} from 'react'
 import './App.scss'
 import Nav from './Components/Nav'
 import Home from './Components/Home'
@@ -25,7 +25,7 @@ function App() {
 
     const sectionsDiv = [...sectionsRef.current.childNodes[1].children];
     const array = [];
-    
+
     array.push(
       sectionsDiv[1].childNodes[0],
       sectionsDiv[1].childNodes[1],

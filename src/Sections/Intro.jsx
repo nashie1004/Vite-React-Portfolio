@@ -14,8 +14,11 @@ export default function Intro() {
           </div>
         </div>
         <div className="home-imgs">
-          <div className="bg-color"></div>
-          <img src="https://picsum.photos/id/234/300/300" alt="pic" />
+          <div className='skew'>
+            <div className="bg-color">
+              <img src="https://picsum.photos/id/234/300/300" alt="pic" />
+            </div>
+          </div>
         </div>
       </div>
     </>

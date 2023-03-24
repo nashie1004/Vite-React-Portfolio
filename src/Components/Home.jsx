@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react'
+import React from 'react'
 import Intro from '../sections/Intro'
 import About from '../sections/About'
 import Tech from '../sections/Tech'
@@ -21,7 +21,7 @@ export default function Home() {
       <div className="section">
         <Projects />
       </div>
-      <div className="section">
+      <div className="section contact-padding">
         <Contact />
       </div>
     </div>

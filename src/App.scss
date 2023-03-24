@@ -59,13 +59,15 @@ $yellow: yellow;
         background: $black;
 
         .no-animate{
-            transition: opacity .2s ease-in-out, transform .2s ease-in-out;
+            transition: opacity .28s ease-in-out, transform .28s ease-in-out;
             opacity: 0;
-            transform: translateY(10%);
+            transform: translateY(20%);
+            filter: blur(10px);
         }
         .animate{
             opacity: 1;
             transform: translateY(0%);
+            filter: blur(0px);
         }
     
         .section{
@@ -90,6 +92,9 @@ $yellow: yellow;
         }
         .low-padding{
             min-height: 300px;
+        }
+        .contact-padding{
+            min-height: 680px;
         }
     }
 }
