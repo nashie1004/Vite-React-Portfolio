@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useContext, useEffect, useState} from 'react'
 import Intro from '../sections/Intro'
 import About from '../sections/About'
 import Tech from '../sections/Tech'
@@ -6,6 +6,7 @@ import Projects from '../sections/Projects'
 import Contact from '../sections/Contact'
 
 export default function Home() {
+
   return (
     <div className='Home'>
       <div className="section">

@@ -11,7 +11,7 @@ $white: white;
     min-height: 400px;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    // gap: 1rem;
 
     @mixin flex{
         // border: 1px dashed $dodger;
@@ -46,7 +46,12 @@ $white: white;
                 padding: 1rem 1.5rem;
                 border: 2px solid $dodger;
                 max-width: 230px;
-                // color: $dodger;
+                transition: background .2s ease-in-out;
+
+                &:hover{
+                    cursor: pointer;
+                    background: $dodger;
+                }
             }
         }
     }
@@ -55,14 +60,24 @@ $white: white;
         flex: .55;
         position: relative;
 
+        @keyframes move{
+            0%, 100%{
+                transform: translateY(-10%);
+            }
+            50%{
+                transform: translateY(10%);
+            }
+        }
+
+        .bg-color, img{animation: move 3s ease-in-out infinite;}
+
         .bg-color{
             position: absolute;
             background: $dodger;
-            width: 300px;
-            height: 300px;
+            width: 340px;
+            height: 340px;
             border-radius: 2rem;
-            transform: rotate(15deg);
-        }
+        } //
 
         img{
             position: absolute;
