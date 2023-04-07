@@ -2,7 +2,7 @@ import React from 'react'
 import '../Styles/Projects.scss'
 import { FaLink, FaGithub } from 'react-icons/fa';
 
-export default function ProjectCard({title, gifImg, techs, liveURL, githubURL}) {
+export default function ProjectCard({title, gifImg, techs, liveURL, githubURL, description}) {
   return (
     <div className='project-card'>
         <div className="img">
@@ -22,7 +22,7 @@ export default function ProjectCard({title, gifImg, techs, liveURL, githubURL}) 
                     })
                 }
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam unde numquam, eligendi perspiciatis dicta culpa laborum odio exercitationem cumque sequi, saepe quibusdam sapiente. Voluptates, laboriosam.</p>
+            <p>{description}</p>
             <div className="links">
                 <a href={liveURL}>
                     <FaLink size='1.6rem' />
